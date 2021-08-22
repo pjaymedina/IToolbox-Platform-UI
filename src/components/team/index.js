@@ -11,23 +11,7 @@ const teams = [
         fb: "",
         github: "",
         linkedin: "",
-    },
-    {
-        image: nico,
-        name: "Nicole John Mortel",
-        position: "Founder",
-        fb: "",
-        github: "",
-        linkedin: "",
-    },
-    {
-        image: nico,
-        name: "Nicole John Mortel",
-        position: "Founder",
-        fb: "",
-        github: "",
-        linkedin: "",
-    },
+    }
 ];
 
 function Team(props) {

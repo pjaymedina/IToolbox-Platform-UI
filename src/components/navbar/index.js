@@ -9,7 +9,7 @@ function NavBar(props) {
             <Navbar bg="white" expand="lg" sticky="top">
                 <Container style={styles.navbarContainer}>
                     <Navbar.Brand href="/" style={styles.navBrand}>
-                        iToolbox PH
+                        IToolbox
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

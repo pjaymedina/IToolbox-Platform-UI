@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import colors from "../../config/colors";
-
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 function NavBar(props) {
     return (
         <>
+        <Router>
+            <div>
             <Container id="home" />
             <Navbar bg="white" expand="lg" sticky="top">
                 <Container style={styles.navbarContainer}>
@@ -19,11 +21,24 @@ function NavBar(props) {
                             <Nav.Link href="/#team">Team</Nav.Link>
                             <Nav.Link href="/#contact">Contact Us</Nav.Link>
                         </Nav>
-                        <Button style={styles.signInButton}>Sign In</Button>
-                        <Button style={styles.signUpButton}>Sign Up</Button>
+                        <Button style={styles.signInButton} href="/login">Login</Button>
+                        <Button style={styles.signUpButton} href="/register"> Sign Up</Button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            </div>
+            {/* <div>
+                <Switch>
+                    <Route path="/login">
+                        <Login/>
+                    </Route>
+                    <Route path="/register">
+                        <Register/>
+                    </Route>
+                </Switch>
+            </div> */}
+            </Router>
+            
         </>
     );
 }
